@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import BMI from './BMI';
+import Bank from './Bank';
+import Harga from './Harga';
+import Biner from './Convert/Biner';
+import Decimal from './Convert/Decimal';
+import Hexadecimal from './Convert/Hexadecimal';
+import Octal from './Convert/Octal';
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+      <BMI />
+      <hr />
+      <Bank />
+      <hr />
+      <Harga />
+      <hr />
+      <Biner />
+      <hr />
+      <Decimal />
+      <hr />
+      <Hexadecimal />
+      <hr />
+      <Octal/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
